@@ -61,9 +61,60 @@ class SecondPage extends StatelessWidget {
                     Container(
                         width: 100, child: Image.asset("assets/hiphop.jpeg")),
                     SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 10),
+              Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(
+                      left: 5,
+                      top: 5,
+                    ),
+                    height: 35,
+                    color: Color.fromRGBO(51, 50, 47, 2.0),
+                    child: Text(
+                      "Recommended >",
+                      style: TextStyle(color: Colors.white, fontSize: 21),
+                    ),
+                  ),
+                ],
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                    Container(
+                        width: 100, child: Image.asset("assets/hiphop.jpeg")),
+                    SizedBox(width: 10),
+                  ],
+                ),
+              ),
             ],
           ),
         ));

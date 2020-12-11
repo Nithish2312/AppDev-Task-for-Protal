@@ -39,16 +39,6 @@ class FirstPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/second');
-                },
-                child: null),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/third');
-                },
-                child: null),
             Padding(
               padding: EdgeInsets.only(left: 0.0, top: 10.0),
               child: Text(
@@ -337,7 +327,25 @@ class FirstPage extends StatelessWidget {
                             child: Image.asset("assets/singing4.jpeg")),
                       ],
                     ),
-                  )
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(
+                        child: Text("Go to List of Events"),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/second');
+                        },
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/third');
+                          },
+                          child: Text("Go to Profile Page")),
+                    ],
+                  ),
                 ],
               ),
             ),
